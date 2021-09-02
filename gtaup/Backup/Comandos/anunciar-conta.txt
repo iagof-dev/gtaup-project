@@ -1,0 +1,486 @@
+{
+  "name": "anunciar-conta",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "GPOMe",
+  "actions": [
+    {
+      "dataName": "ligando",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "Jump to Anchor": null,
+      "name": "Check Global Data"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Nick da Conta?",
+      "storage": "1",
+      "varName2": "nick-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "nick-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "nick-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Level da conta:",
+      "storage": "1",
+      "varName2": "level-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "level-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "level-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Total Money:",
+      "storage": "1",
+      "varName2": "money-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "money-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "money-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Plataforma",
+      "storage": "1",
+      "varName2": "plata-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "plata-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "plata-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Valor da Conta:",
+      "storage": "1",
+      "varName2": "valor-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "valor-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "valor-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Lista de Outfit:",
+      "storage": "1",
+      "varName2": "outfit-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "outfit-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "outfit-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Features:",
+      "storage": "1",
+      "varName2": "features-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "features-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "features-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Print da conta (Mostrando level, Dinheiro):\n\nUse link com final .png",
+      "storage": "1",
+      "varName2": "linkprint-msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0 && author.id === user.id",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "storage2": "1",
+      "varName2": "linkprint-resultado",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "linkprint-msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member}\nAguarde... Enviando Mensagem EMBED!\n\ncodigo 1",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "icone-servidor-url",
+      "name": "Store Server Info"
+    },
+    {
+      "title": "GTA UP | Conta Upada Disponível!",
+      "author": "",
+      "color": "34eb40",
+      "url": "https://discord.gg/Rp8uCpcjam",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "${tempVars(\"linkprint-resultado\")}",
+      "thumbUrl": "https://cdn.discordapp.com/attachments/859885241798623249/859887282948276284/gtaup-logo-1024768.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Nick:",
+      "message": "${tempVars(\"nick-resultado\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Preço:",
+      "message": "R$${tempVars(\"valor-resultado\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Level:",
+      "message": "${tempVars(\"level-resultado\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Plataforma:",
+      "message": "${tempVars(\"plata-resultado\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Money:",
+      "message": "$${tempVars(\"money-resultado\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Outfit list:",
+      "message": "${tempVars(\"outfit-resultado\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "fieldName": "Features:",
+      "message": "${tempVars(\"features-resultado\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "input": "0",
+      "wordLength": "5",
+      "storage": "1",
+      "varName": "codigo-anuncio",
+      "name": "Randomize Letters"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "message": "Anuncio #${tempVars(\"codigo-anuncio\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "message": "GTA UP | Deseja Comprar? Chame !Z D4rk Z!#0001",
+      "footerIcon": "https://cdn.discordapp.com/attachments/859885241798623249/859885260518588426/GTAUP-LOGO.png",
+      "name": "Set Embed Footer"
+    },
+    {
+      "time": "3",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "info": "0",
+      "find": "859240730018054154",
+      "storage": "1",
+      "varName": "canal-embed",
+      "name": "Find Channel"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member}\nEnviando Embed ao canal!\n\nCodigo 1",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "0",
+      "count": "11",
+      "condition": "0",
+      "custom": "",
+      "varName": "",
+      "name": "Delete Bulk Messages"
+    },
+    {
+      "storage": "1",
+      "varName": "EMBED-CRIADO",
+      "channel": "5",
+      "varName2": "canal-embed",
+      "storage3": "1",
+      "varName3": "embed-enviada",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "||@here||",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-enviada",
+      "emoji": "4",
+      "varName2": "🔥",
+      "varName3": "",
+      "name": "Add Reaction"
+    }
+  ]
+}

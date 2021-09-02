@@ -1,0 +1,33 @@
+{
+  "name": "enviar-termos",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "iyQUQ",
+  "actions": [
+    {
+      "info": "0",
+      "find": "859241440869744690",
+      "storage": "1",
+      "varName": "TOS-CAnal",
+      "name": "Find Channel"
+    },
+    {
+      "channel": "5",
+      "varName": "TOS-CAnal",
+      "message": "||@everyone||\n————————————————————————————\n**Termos de Serviço (TOS)**\n\n1.Todas as compras não são reembolsáveis.\n2.Reembolso só será enviado, Caso houver erro de nossa parte.\n3.Nossa garantia é de 1 semana, passando disso não iremos trocar sua conta.\n4.Após feito a entrega da produto, Será apenas troca de conta, caso seja banida no prazo da garantia.\n5.Apenas será feito a troca da conta caso a conta seja banida em menos de 1 semana.\n6.Todas as contas são testadas 1 mês, antes de ser entregue para você!\n7.O Upgrade de contas será necessario envio de uma conta, Seja: Social Club/Steam/Epic Games.\n6.Após upgrade reembolso só será valido enquanto estiver na garantia caso a conta seja banida.\n\n————————————————————————————\n\n",
+      "storage": "1",
+      "varName2": "TOS-MsG",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "TOS-MsG",
+      "emoji": "4",
+      "varName2": "📜",
+      "varName3": "",
+      "name": "Add Reaction"
+    }
+  ]
+}
